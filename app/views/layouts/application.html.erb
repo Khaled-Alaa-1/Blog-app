@@ -9,16 +9,19 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-  
+
   <header>
-    <% if current_user %>
-      <%= link_to "New Post", new_user_post_path(current_user) %>
-      <%= link_to "Sign out", sign_out_user_path, method: :get %>
-    <% end %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-  </header>
+
+<% if current_user %>
+  <%= link_to "New Post", new_user_post_path(current_user) %>
+  <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
+<% end %>
+
+  
+
   <body>
+      <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
