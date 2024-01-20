@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blogapp</title>
+    <title>BlogApp</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,7 +9,15 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
+  
+  <header>
+    <% if current_user %>
+      <%= link_to "New Post", new_user_post_path(current_user) %>
+      <%= link_to "Sign out", sign_out_user_path, method: :get %>
+    <% end %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+  </header>
   <body>
     <%= yield %>
   </body>
