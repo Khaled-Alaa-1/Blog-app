@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Post, type: :model do
   describe 'Validations' do
     let(:user) do
-      User.create(name: 'steev', photo: 'Image will be displayed here', bio: 'Hello guys', posts_counter: 0)
+      User.create(name: 'khaled', photo: 'Image will be displayed here', bio: 'Hello guys', posts_counter: 0)
     end
     let(:post) do
       Post.create(title: 'First Post', text: 'This is my first post', author_id: user.id, comments_counter: 0,
@@ -52,7 +52,7 @@ RSpec.describe Post, type: :model do
 
     describe '#recent_comments' do
       let(:user) do
-        User.create(name: 'Ritika', photo: 'Image will be displayed here', bio: 'Hello guys', posts_counter: 0)
+        User.create(name: 'khaled', photo: 'Image will be displayed here', bio: 'Hello guys', posts_counter: 0)
       end
       let(:post) do
         Post.create(title: 'First Post', text: 'This is my first post', author_id: user.id, comments_counter: 0,
