@@ -23,7 +23,7 @@
 
 # 📖 [Blog-app] <a name="about-project"></a>
 
-Blog-app is a web application that allows users to create, edit, and delete blog posts. Users can also comment on blog posts and like or dislike them. The application is built with Ruby on Rails
+Blog-app is a web application that allows users to create, edit, and delete blog posts. Users can also comment on blog posts and like or dislike them. The application is built with Ruby on Rails.
 
 
 ## 🛠 Built With <a name="built-with"></a>
