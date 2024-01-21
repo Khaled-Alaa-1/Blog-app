@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  let(:user) { User.create(name: 'khaled', photo: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjk2ODdiNGFkMzE3ODQ1NDFkOTdhYWVhZWYxMDYxNjdhMWVhM2JlOCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/BG9OrtFcxH9CjNpNcT/giphy.gif', bio: 'Hey there', posts_counter: 0) }
+  let(:user) { User.create(name: 'steev', photo: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjk2ODdiNGFkMzE3ODQ1NDFkOTdhYWVhZWYxMDYxNjdhMWVhM2JlOCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/BG9OrtFcxH9CjNpNcT/giphy.gif', bio: 'Hey there', posts_counter: 0) }
 
   it 'Name must not be nil' do
     user.name = nil
